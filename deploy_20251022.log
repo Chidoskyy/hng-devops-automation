@@ -16,3 +16,595 @@ Enter Git repository URL: Enter Git PAT (Personal Access Token):
 Enter branch to deploy (default: main): Enter remote server username: Enter remote server IP address: Enter SSH key path: Enter application internal port (e.g., 8080): Cloning into 'hng-devops-automation'...
 fatal: Remote branch main not found in upstream origin
 Deployment failed. Check log file: deploy_20251022.log
+=====================================
+Starting HNG Stage 1 Deployment Script
+=====================================
+Enter Git repository URL: Enter Git PAT (Personal Access Token): 
+Enter branch to deploy (default: main): Enter remote server username: Enter remote server IP address: Enter SSH key path: Enter application internal port (e.g., 8080): Cloning into 'hng-devops-automation'...
+Repository hng-devops-automation is ready on branch main.
+Checking SSH connection to Chidoskyy@98.89.24.230...
+Warning: Permanently added '98.89.24.230' (ED25519) to the list of known hosts.
+Chidoskyy@98.89.24.230: Permission denied (publickey).
+Error: Unable to establish SSH connection to Chidoskyy@98.89.24.230
+=====================================
+Starting HNG Stage 1 Deployment Script
+=====================================
+Enter Git repository URL: Enter Git PAT (Personal Access Token): =====================================
+Starting HNG Stage 1 Deployment Script
+=====================================
+Enter Git repository URL: Enter Git PAT (Personal Access Token): 
+Enter branch to deploy (default: main): Enter remote server username: Enter remote server IP address: Enter SSH key path: Enter application internal port (e.g., 8080): Repository already exists. Pulling latest changes.
+From https://github.com/Chidoskyy/hng-devops-automation
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Repository hng-devops-automation is ready on branch main.
+Checking SSH connection to ubuntu@98.89.24.230...
+SSH connection successful
+SSH connection established.
+Preparing remote environment on 98.89.24.230...
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.14.0-1011-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Oct 22 22:32:50 UTC 2025
+
+  System load:  0.0               Processes:             110
+  Usage of /:   32.9% of 6.71GB   Users logged in:       0
+  Memory usage: 23%               IPv4 address for enX0: 172.31.29.49
+  Swap usage:   0%
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+60 updates can be applied immediately.
+29 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Hit:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:4 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:5 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1535 kB]
+Get:6 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [174 kB]
+Get:7 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [378 kB]
+Get:8 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Get:9 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:10 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7136 B]
+Get:11 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [11.0 kB]
+Get:12 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [212 B]
+Get:13 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Get:14 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1260 kB]
+Get:15 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [208 kB]
+Get:16 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21.6 kB]
+Get:17 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [904 kB]
+Get:18 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [52.3 kB]
+Get:19 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2069 kB]
+Get:20 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [468 kB]
+Get:21 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [208 B]
+Get:22 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [212 B]
+Fetched 7467 kB in 2s (3633 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ca-certificates is already the newest version (20240203).
+ca-certificates set to manually installed.
+curl is already the newest version (8.5.0-2ubuntu10.6).
+curl set to manually installed.
+gnupg is already the newest version (2.4.4-2ubuntu17.3).
+gnupg set to manually installed.
+lsb-release is already the newest version (12.0-2).
+lsb-release set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 55 not upgraded.
+Hit:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease
+Get:4 https://download.docker.com/linux/ubuntu noble InRelease [48.5 kB]
+Hit:5 http://security.ubuntu.com/ubuntu noble-security InRelease
+Get:6 https://download.docker.com/linux/ubuntu noble/stable amd64 Packages [33.3 kB]
+Fetched 81.7 kB in 1s (112 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  docker-ce-rootless-extras libslirp0 pigz slirp4netns
+Suggested packages:
+  cgroupfs-mount | cgroup-lite docker-model-plugin
+The following NEW packages will be installed:
+  containerd.io docker-buildx-plugin docker-ce docker-ce-cli
+  docker-ce-rootless-extras docker-compose-plugin libslirp0 pigz slirp4netns
+0 upgraded, 9 newly installed, 0 to remove and 55 not upgraded.
+Need to get 105 MB of archives.
+After this operation, 437 MB of additional disk space will be used.
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 pigz amd64 2.8-1 [65.6 kB]
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libslirp0 amd64 4.7.0-1ubuntu3 [63.8 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 slirp4netns amd64 1.2.1-1build2 [34.9 kB]
+Get:4 https://download.docker.com/linux/ubuntu noble/stable amd64 containerd.io amd64 1.7.28-1~ubuntu.24.04~noble [31.9 MB]
+Get:5 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-ce-cli amd64 5:28.5.1-1~ubuntu.24.04~noble [16.5 MB]
+Get:6 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-ce amd64 5:28.5.1-1~ubuntu.24.04~noble [19.7 MB]
+Get:7 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-buildx-plugin amd64 0.29.1-1~ubuntu.24.04~noble [15.9 MB]
+Get:8 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-ce-rootless-extras amd64 5:28.5.1-1~ubuntu.24.04~noble [6481 kB]
+Get:9 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-compose-plugin amd64 2.40.2-1~ubuntu.24.04~noble [14.3 MB]
+Fetched 105 MB in 1s (78.3 MB/s)
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package containerd.io.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 71718 files and directories currently installed.)
+Preparing to unpack .../0-containerd.io_1.7.28-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking containerd.io (1.7.28-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-ce-cli.
+Preparing to unpack .../1-docker-ce-cli_5%3a28.5.1-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-ce-cli (5:28.5.1-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-ce.
+Preparing to unpack .../2-docker-ce_5%3a28.5.1-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-ce (5:28.5.1-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package pigz.
+Preparing to unpack .../3-pigz_2.8-1_amd64.deb ...
+Unpacking pigz (2.8-1) ...
+Selecting previously unselected package docker-buildx-plugin.
+Preparing to unpack .../4-docker-buildx-plugin_0.29.1-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-buildx-plugin (0.29.1-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-ce-rootless-extras.
+Preparing to unpack .../5-docker-ce-rootless-extras_5%3a28.5.1-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-ce-rootless-extras (5:28.5.1-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-compose-plugin.
+Preparing to unpack .../6-docker-compose-plugin_2.40.2-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-compose-plugin (2.40.2-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package libslirp0:amd64.
+Preparing to unpack .../7-libslirp0_4.7.0-1ubuntu3_amd64.deb ...
+Unpacking libslirp0:amd64 (4.7.0-1ubuntu3) ...
+Selecting previously unselected package slirp4netns.
+Preparing to unpack .../8-slirp4netns_1.2.1-1build2_amd64.deb ...
+Unpacking slirp4netns (1.2.1-1build2) ...
+Setting up docker-buildx-plugin (0.29.1-1~ubuntu.24.04~noble) ...
+Setting up containerd.io (1.7.28-1~ubuntu.24.04~noble) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /usr/lib/systemd/system/containerd.service.
+Setting up docker-compose-plugin (2.40.2-1~ubuntu.24.04~noble) ...
+Setting up docker-ce-cli (5:28.5.1-1~ubuntu.24.04~noble) ...
+Setting up libslirp0:amd64 (4.7.0-1ubuntu3) ...
+Setting up pigz (2.8-1) ...
+Setting up docker-ce-rootless-extras (5:28.5.1-1~ubuntu.24.04~noble) ...
+Setting up slirp4netns (1.2.1-1build2) ...
+Setting up docker-ce (5:28.5.1-1~ubuntu.24.04~noble) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /usr/lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /usr/lib/systemd/system/docker.socket.
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.5) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Synchronizing state of docker.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable docker
+Docker version 28.5.1, build e180ab8
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  nginx-common
+Suggested packages:
+  fcgiwrap nginx-doc ssl-cert
+The following NEW packages will be installed:
+  nginx nginx-common
+0 upgraded, 2 newly installed, 0 to remove and 55 not upgraded.
+Need to get 564 kB of archives.
+After this operation, 1596 kB of additional disk space will be used.
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 nginx-common all 1.24.0-2ubuntu7.5 [43.4 kB]
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 nginx amd64 1.24.0-2ubuntu7.5 [520 kB]
+Fetched 564 kB in 0s (15.5 MB/s)
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package nginx-common.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 71979 files and directories currently installed.)
+Preparing to unpack .../nginx-common_1.24.0-2ubuntu7.5_all.deb ...
+Unpacking nginx-common (1.24.0-2ubuntu7.5) ...
+Selecting previously unselected package nginx.
+Preparing to unpack .../nginx_1.24.0-2ubuntu7.5_amd64.deb ...
+Unpacking nginx (1.24.0-2ubuntu7.5) ...
+Setting up nginx-common (1.24.0-2ubuntu7.5) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /usr/lib/systemd/system/nginx.service.
+Setting up nginx (1.24.0-2ubuntu7.5) ...
+ * Upgrading binary nginx
+   ...done.
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for ufw (0.36.2-6) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Synchronizing state of nginx.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable nginx
+Remote environment ready.
+Transferring application files to remote server...
+Deploying application on remote server...
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.14.0-1011-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Oct 22 22:32:50 UTC 2025
+
+  System load:  0.0               Processes:             110
+  Usage of /:   32.9% of 6.71GB   Users logged in:       0
+  Memory usage: 23%               IPv4 address for enX0: 172.31.29.49
+  Swap usage:   0%
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+60 updates can be applied immediately.
+38 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 176B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.9-slim
+#2 DONE 0.5s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 8.59kB done
+#4 DONE 0.0s
+
+#5 [1/4] FROM docker.io/library/python:3.9-slim@sha256:462f0a29c35101755023d5612c2455c9a3f69755bf4b3db1198b500df58c96d1
+#5 resolve docker.io/library/python:3.9-slim@sha256:462f0a29c35101755023d5612c2455c9a3f69755bf4b3db1198b500df58c96d1 0.0s done
+#5 sha256:462f0a29c35101755023d5612c2455c9a3f69755bf4b3db1198b500df58c96d1 10.36kB / 10.36kB done
+#5 sha256:dc9f486a31b5c0642ed5606b41c820fae66e6d91003c32e4f3d1624b6e7425cd 1.74kB / 1.74kB done
+#5 sha256:725dd64d2f62808e0aee4d5d916f4c208275716e74cc700ed68aa17078411ca9 5.30kB / 5.30kB done
+#5 sha256:38513bd7256313495cdd83b3b0915a633cfa475dc2a07072ab2c8d191020ca5d 4.19MB / 29.78MB 0.1s
+#5 sha256:c57466e36deb99f355eab1131bc21d799709189ecdd7fb41cf4c17d5f53724e2 0B / 1.29MB 0.1s
+#5 sha256:6f010d693edcb2d965ff3c2a741fc92cded69746aa616f746e7813896fdd443b 0B / 13.87MB 0.1s
+#5 sha256:38513bd7256313495cdd83b3b0915a633cfa475dc2a07072ab2c8d191020ca5d 12.58MB / 29.78MB 0.2s
+#5 sha256:c57466e36deb99f355eab1131bc21d799709189ecdd7fb41cf4c17d5f53724e2 1.29MB / 1.29MB 0.1s done
+#5 sha256:6f010d693edcb2d965ff3c2a741fc92cded69746aa616f746e7813896fdd443b 1.05MB / 13.87MB 0.2s
+#5 sha256:21ed5e7e522581efdab14b4fde1d7d493901b4d25736b947520695c7911da66b 250B / 250B 0.2s done
+#5 sha256:38513bd7256313495cdd83b3b0915a633cfa475dc2a07072ab2c8d191020ca5d 22.02MB / 29.78MB 0.3s
+#5 sha256:6f010d693edcb2d965ff3c2a741fc92cded69746aa616f746e7813896fdd443b 4.19MB / 13.87MB 0.3s
+#5 sha256:38513bd7256313495cdd83b3b0915a633cfa475dc2a07072ab2c8d191020ca5d 29.78MB / 29.78MB 0.4s
+#5 sha256:6f010d693edcb2d965ff3c2a741fc92cded69746aa616f746e7813896fdd443b 7.34MB / 13.87MB 0.4s
+#5 extracting sha256:38513bd7256313495cdd83b3b0915a633cfa475dc2a07072ab2c8d191020ca5d
+#5 sha256:38513bd7256313495cdd83b3b0915a633cfa475dc2a07072ab2c8d191020ca5d 29.78MB / 29.78MB 0.4s done
+#5 sha256:6f010d693edcb2d965ff3c2a741fc92cded69746aa616f746e7813896fdd443b 13.87MB / 13.87MB 0.5s done
+#5 extracting sha256:38513bd7256313495cdd83b3b0915a633cfa475dc2a07072ab2c8d191020ca5d 1.6s done
+#5 extracting sha256:c57466e36deb99f355eab1131bc21d799709189ecdd7fb41cf4c17d5f53724e2 0.1s
+#5 extracting sha256:c57466e36deb99f355eab1131bc21d799709189ecdd7fb41cf4c17d5f53724e2 0.1s done
+#5 extracting sha256:6f010d693edcb2d965ff3c2a741fc92cded69746aa616f746e7813896fdd443b 0.1s
+#5 extracting sha256:6f010d693edcb2d965ff3c2a741fc92cded69746aa616f746e7813896fdd443b 0.8s done
+#5 extracting sha256:21ed5e7e522581efdab14b4fde1d7d493901b4d25736b947520695c7911da66b done
+#5 DONE 3.3s
+
+#6 [2/4] WORKDIR /app
+#6 DONE 0.1s
+
+#7 [3/4] COPY . .
+#7 DONE 0.0s
+
+#8 [4/4] RUN pip install --no-cache-dir -r requirements.txt
+#8 2.634 Collecting flask==3.0.3
+#8 2.655   Downloading flask-3.0.3-py3-none-any.whl (101 kB)
+#8 2.661      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 101.7/101.7 kB 30.4 MB/s eta 0:00:00
+#8 2.729 Collecting Werkzeug>=3.0.0
+#8 2.733   Downloading werkzeug-3.1.3-py3-none-any.whl (224 kB)
+#8 2.737      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 224.5/224.5 kB 159.0 MB/s eta 0:00:00
+#8 2.829 Collecting importlib-metadata>=3.6.0
+#8 2.833   Downloading importlib_metadata-8.7.0-py3-none-any.whl (27 kB)
+#8 2.852 Collecting blinker>=1.6.2
+#8 2.856   Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+#8 2.876 Collecting itsdangerous>=2.1.2
+#8 2.880   Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+#8 2.910 Collecting Jinja2>=3.1.2
+#8 2.916   Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+#8 2.919      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 148.9 MB/s eta 0:00:00
+#8 2.957 Collecting click>=8.1.3
+#8 2.962   Downloading click-8.1.8-py3-none-any.whl (98 kB)
+#8 2.965      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.2/98.2 kB 295.1 MB/s eta 0:00:00
+#8 3.032 Collecting zipp>=3.20
+#8 3.037   Downloading zipp-3.23.0-py3-none-any.whl (10 kB)
+#8 3.206 Collecting MarkupSafe>=2.0
+#8 3.211   Downloading markupsafe-3.0.3-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (20 kB)
+#8 3.374 Installing collected packages: zipp, MarkupSafe, itsdangerous, click, blinker, Werkzeug, Jinja2, importlib-metadata, flask
+#8 3.842 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#8 3.842 Successfully installed Jinja2-3.1.6 MarkupSafe-3.0.3 Werkzeug-3.1.3 blinker-1.9.0 click-8.1.8 flask-3.0.3 importlib-metadata-8.7.0 itsdangerous-2.2.0 zipp-3.23.0
+#8 3.936 
+#8 3.936 [notice] A new release of pip is available: 23.0.1 -> 25.2
+#8 3.936 [notice] To update, run: pip install --upgrade pip
+#8 DONE 4.1s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 0.3s done
+#9 writing image sha256:f3e4ab82facdbd9acf1eb2be9f44ef293dd2f8ea55dd6ef00f94755206df19f5
+#9 writing image sha256:f3e4ab82facdbd9acf1eb2be9f44ef293dd2f8ea55dd6ef00f94755206df19f5 done
+#9 naming to docker.io/library/flask_app done
+#9 DONE 0.3s
+d45abed187d26845983a3fa97d98e082a3542d83ed696d386786cc4fe5dcdb45
+Deployment completed successfully.
+Configuring Nginx as a reverse proxy...
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.14.0-1011-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Oct 22 22:32:50 UTC 2025
+
+  System load:  0.0               Processes:             110
+  Usage of /:   32.9% of 6.71GB   Users logged in:       0
+  Memory usage: 23%               IPv4 address for enX0: 172.31.29.49
+  Swap usage:   0%
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+60 updates can be applied immediately.
+38 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+2025/10/22 22:33:52 [emerg] 8297#8297: invalid number of arguments in "proxy_set_header" directive in /etc/nginx/sites-enabled/flask_app:7
+nginx: configuration file /etc/nginx/nginx.conf test failed
+Deployment failed. Check log file: deploy_20251022.log
+=====================================
+Starting HNG Stage 1 Deployment Script
+=====================================
+Enter Git repository URL: Enter Git PAT (Personal Access Token): 
+Enter branch to deploy (default: main): Enter remote server username: Enter remote server IP address: Enter SSH key path: Enter application internal port (e.g., 8080): Repository already exists. Pulling latest changes.
+From https://github.com/Chidoskyy/hng-devops-automation
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Repository hng-devops-automation is ready on branch main.
+Checking SSH connection to ubuntu@98.89.24.230...
+SSH connection successful
+SSH connection established.
+Preparing remote environment on 98.89.24.230...
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.14.0-1011-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Oct 22 23:05:13 UTC 2025
+
+  System load:  0.56              Processes:             119
+  Usage of /:   42.6% of 6.71GB   Users logged in:       1
+  Memory usage: 33%               IPv4 address for enX0: 172.31.29.49
+  Swap usage:   0%
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+60 updates can be applied immediately.
+38 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Hit:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:4 https://download.docker.com/linux/ubuntu noble InRelease
+Hit:5 http://security.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists...
+Docker already installed.
+Docker version 28.5.1, build e180ab8
+Nginx already installed.
+Remote environment ready.
+Transferring application files to remote server...
+Deploying application on remote server...
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.14.0-1011-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Oct 22 23:05:13 UTC 2025
+
+  System load:  0.56              Processes:             119
+  Usage of /:   42.6% of 6.71GB   Users logged in:       1
+  Memory usage: 33%               IPv4 address for enX0: 172.31.29.49
+  Swap usage:   0%
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+60 updates can be applied immediately.
+38 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 176B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.9-slim
+#2 DONE 0.3s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/python:3.9-slim@sha256:462f0a29c35101755023d5612c2455c9a3f69755bf4b3db1198b500df58c96d1
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 8.59kB done
+#5 DONE 0.0s
+
+#6 [2/4] WORKDIR /app
+#6 CACHED
+
+#7 [3/4] COPY . .
+#7 CACHED
+
+#8 [4/4] RUN pip install --no-cache-dir -r requirements.txt
+#8 CACHED
+
+#9 exporting to image
+#9 exporting layers done
+#9 writing image sha256:f3e4ab82facdbd9acf1eb2be9f44ef293dd2f8ea55dd6ef00f94755206df19f5 done
+#9 naming to docker.io/library/flask_app done
+#9 DONE 0.0s
+flask_app
+flask_app
+affc5707bdb45bbe35dcb061c4f4536f31ae494c7817e001ac04137ff984b8b7
+Deployment completed successfully.
+Configuring Nginx as a reverse proxy...
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.14.0-1011-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Oct 22 23:05:13 UTC 2025
+
+  System load:  0.56              Processes:             119
+  Usage of /:   42.6% of 6.71GB   Users logged in:       1
+  Memory usage: 33%               IPv4 address for enX0: 172.31.29.49
+  Swap usage:   0%
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+60 updates can be applied immediately.
+38 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+Validating deployment...
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.14.0-1011-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Oct 22 23:05:13 UTC 2025
+
+  System load:  0.56              Processes:             119
+  Usage of /:   42.6% of 6.71GB   Users logged in:       1
+  Memory usage: 33%               IPv4 address for enX0: 172.31.29.49
+  Swap usage:   0%
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+60 updates can be applied immediately.
+38 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+CONTAINER ID   IMAGE       COMMAND           CREATED         STATUS         PORTS                                         NAMES
+affc5707bdb4   flask_app   "python app.py"   2 seconds ago   Up 2 seconds   0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp   flask_app
+Application is running and reachable through Nginx.
+Deployment completed successfully.

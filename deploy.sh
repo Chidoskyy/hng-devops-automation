@@ -140,10 +140,10 @@ EOF
 
 # Configure Nginx as reverse proxy
 echo "Configuring Nginx as a reverse proxy..."
-ssh -i "$SSH_KEY_PATH" -o StrictHostKeyChecking=no "$SSH_USER@$SERVER_IP" << EOF
+ssh -i "$SSH_KEY_PATH" "$SSH_USER@$SERVER_IP" << EOF
 set -e
 NGINX_CONF="/etc/nginx/sites-available/flask_app"
-sudo bash -c "cat > \$NGINX_CONF" << CONFIG
+sudo bash -c "cat > \$NGINX_CONF" << 'CONFIG'
 server {
     listen 80;
     server_name $SERVER_IP;
