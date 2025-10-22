@@ -1,0 +1,18 @@
+=====================================
+Starting HNG Stage 1 Deployment Script
+=====================================
+Enter Git repository URL: Deployment failed. Check log file: deploy_20251022.log
+=====================================
+Starting HNG Stage 1 Deployment Script
+=====================================
+Enter Git repository URL: Enter Git PAT (Personal Access Token): 
+Enter branch to deploy (default: main): Enter remote server username: Enter remote server IP address: Enter SSH key path: Enter application internal port (e.g., 8080): Cloning into 'hng-devops-automation'...
+fatal: unable to access 'https://git@github.com:Chidoskyy/hng-devops-automation.git/': URL rejected: Port number was not a decimal number between 0 and 65535
+Deployment failed. Check log file: deploy_20251022.log
+=====================================
+Starting HNG Stage 1 Deployment Script
+=====================================
+Enter Git repository URL: Enter Git PAT (Personal Access Token): 
+Enter branch to deploy (default: main): Enter remote server username: Enter remote server IP address: Enter SSH key path: Enter application internal port (e.g., 8080): Cloning into 'hng-devops-automation'...
+fatal: Remote branch main not found in upstream origin
+Deployment failed. Check log file: deploy_20251022.log
